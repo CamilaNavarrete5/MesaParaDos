@@ -1,0 +1,45 @@
+/* src/app/global.css */
+@import "tailwindcss";
+
+/* --- TOKENS (modo claro) --- */
+:root {
+  /* Fondo de página (beige claro, no tan blanco) */
+  --background: #F3EEE6;
+
+  /* Fondo de cards (blanco puro para que floten) */
+  --card: #FFFFFF;
+
+  /* Borde de cards / separadores */
+  --border: #E6DCCD;
+
+  /* Texto */
+  --foreground: #3C3C3C; /* principal */
+  --muted: #6B6B6B;      /* secundario */
+
+  /* Marca */
+  --primary: #A3B18A;    /* verde salvia */
+  --accent:  #D4A5A5;    /* rosa viejo */
+  --brown:   #A07855;    /* marrón cálido */
+}
+
+/* Mapear a utilidades de Tailwind */
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-border: var(--border);
+
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-brown: var(--brown);
+
+  --radius-soft: 12px;
+}
+
+/* Aplicar fondo general */
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

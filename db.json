@@ -1,0 +1,115 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "title": "Lasagna",
+      "rating": 4.0,
+      "description": "¿Te gusta la lasagna? Mirá el datazo que tenemos...",
+      "userName": "Matías Antigourmet",
+      "imageSrc": "/lasagna.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-12T22:00:00Z",
+      "location": "CABA, Palermo",
+      "category": "Bodegón",
+      "ratings": {
+        "service": 4.0,
+        "place": 3.0,
+        "ambience": 5.0,
+        "value": 4.0
+      },
+      "content": [
+        "Probamos la lasagna de Cabito en su bodegón y la experiencia fue excelente. La salsa bolognesa tenía un sabor profundo y bien especiado.",
+        "La porción es generosa y perfectamente gratinada. Ideal para quienes disfrutan de un plato abundante y casero.",
+        "El ambiente es relajado, aunque el lugar puede llenarse rápido los fines de semana."
+      ],
+      "gallery": [
+        "/lasagna.jpeg",
+        "/lasagna.jpeg",
+        "/lasagna.jpeg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Milanesa Napolitana XXL",
+      "rating": 4.5,
+      "description": "Crocrante por fuera, jugosa por dentro...",
+      "userName": "Alex G.",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "CABA, Caballito",
+      "category": "Parrilla",
+      "ratings": {
+        "service": 5.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 5.0
+      },
+      "content": [
+        "La milanesa más grande que probamos hasta ahora, y con una cubierta de muzzarella que rebalsa del plato.",
+        "La carne es tierna y jugosa, y la fritura está perfectamente lograda.",
+        "Ideal para compartir entre dos o incluso tres personas."
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Ravioles Caseros de Ricota",
+      "rating": 3.5,
+      "description": "Pasta al dente y salsa pomodoro casera...",
+      "userName": "Sofi C.",
+      "imageSrc": "/ravioles.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-05T14:15:00Z",
+      "location": "Buenos Aires, San Telmo",
+      "category": "Pasta",
+      "ratings": {
+        "service": 3.0,
+        "place": 3.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "Los ravioles son artesanales, rellenos de ricota fresca y bien condimentada.",
+        "La salsa pomodoro es suave pero le falta un poco de intensidad.",
+        "El pan de la casa es un plus, perfecto para acompañar."
+      ],
+      "gallery": [
+        "/ravioles.jpeg",
+        "/ravioles.jpeg",
+        "/ravioles.jpeg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Milanesa de pollo",
+      "rating": 3.5,
+      "description": "medio pelo",
+      "userName": "Camila",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "CABA, Caballito",
+      "category": "Bodegón",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "La milanesa más medio pelo hasta ahora"
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ]
+    }
+      
+  ]
+}
