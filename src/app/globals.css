@@ -3,10 +3,10 @@
 
 /* --- TOKENS (modo claro) --- */
 :root {
-  /* Fondo de página (beige claro, no tan blanco) */
+  /* Fondo de página */
   --background: #F3EEE6;
 
-  /* Fondo de cards (blanco puro para que floten) */
+  /* Fondo de cards */
   --card: #FFFFFF;
 
   /* Borde de cards / separadores */
@@ -22,7 +22,7 @@
   --brown:   #A07855;    /* marrón cálido */
 }
 
-/* Mapear a utilidades de Tailwind */
+
 @theme inline {
   --color-background: var(--background);
   --color-card: var(--card);
@@ -34,12 +34,52 @@
   --color-primary: var(--primary);
   --color-accent: var(--accent);
   --color-brown: var(--brown);
+  
+  --color-brand-green: #A3B18A;
 
   --radius-soft: 12px;
 }
+
+/* --- UTILIDADES DE LAYOUT GLOBALES --- */
+/* Contenedor con márgenes laterales consistentes para el contenido */
+@utility container-page {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Separación vertical estándar entre bloques principales */
+@utility section-gap {
+  @apply py-6 sm:py-8 lg:py-10;
+}
+
+/* Full-bleed: bloques que ocupan todo el ancho (hero/banners) */
+@utility full-bleed {
+  @apply w-full;
+}
+
+/* Oculta scrollbar en todos los navegadores */
+.scrollbar-none {
+  -ms-overflow-style: none;    /* IE/Edge */
+  scrollbar-width: none;       /* Firefox */
+}
+.scrollbar-none::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+
+.scrollbar-hide {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE/Edge */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 
 /* Aplicar fondo general */
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+html, body, #__next {
+  width: 100%;
+  min-height: 100%;
 }

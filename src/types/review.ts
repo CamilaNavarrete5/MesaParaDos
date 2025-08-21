@@ -8,17 +8,23 @@ export type ReviewRatings = {
 export type Review = {
   id: number;
   title: string;
-  rating: number;        // promedio general (si lo tenés)
+  slug:string;
+  rating: number;        
   description: string;
   userName: string;
   imageSrc: string;
   userAvatarSrc: string;
   createdAt: string;
-
-  // Nuevos
+  //ubicacion
   location?: string;
+  province?: string;
+  city?: string;
+  neighborhood?: string;
+
   category?: string;
+  
   ratings?: ReviewRatings;
-  content?: string[];     // párrafos
-  gallery?: string[];     // rutas a imágenes
+  gallery?: string[]; 
+
+  petFriendly?: boolean;
 };

@@ -4,9 +4,10 @@
       "id": 1,
       "title": "Lasagna",
       "rating": 4.0,
-      "description": "¿Te gusta la lasagna? Mirá el datazo que tenemos...",
+      "description": "Probaaaaamos la lasagna de Cabito en su bodegón y la experiencia fue excelente. La salsa bolognesa tenía un sabor profundo y bien especiado, La porción es generosa y perfectamente gratinada. Ideal para quienes disfrutan de un plato abundante y casero., El ambiente es relajado, aunque el lugar puede llenarse rápido los fines de semana.",
       "userName": "Matías Antigourmet",
       "imageSrc": "/lasagna.jpeg",
+      "petFriendly": false,
       "userAvatarSrc": "/icono.jpg",
       "createdAt": "2025-08-12T22:00:00Z",
       "location": "CABA, Palermo",
@@ -26,7 +27,10 @@
         "/lasagna.jpeg",
         "/lasagna.jpeg",
         "/lasagna.jpeg"
-      ]
+      ],
+      "province": "Buenos Aires",
+      "city": "CABA",
+      "neighborhood": "Palermo"
     },
     {
       "id": 2,
@@ -35,6 +39,7 @@
       "description": "Crocrante por fuera, jugosa por dentro...",
       "userName": "Alex G.",
       "imageSrc": "/milanesa.jpeg",
+      "petFriendly": true,
       "userAvatarSrc": "/icono.jpg",
       "createdAt": "2025-08-10T18:30:00Z",
       "location": "CABA, Caballito",
@@ -54,7 +59,10 @@
         "/milanesa.jpeg",
         "/milanesa.jpeg",
         "/milanesa.jpeg"
-      ]
+      ],
+      "province": "Buenos Aires",
+      "city": "CABA",
+      "neighborhood": "Caballito"
     },
     {
       "id": 3,
@@ -82,7 +90,10 @@
         "/ravioles.jpeg",
         "/ravioles.jpeg",
         "/ravioles.jpeg"
-      ]
+      ],
+      "province": "Buenos Aires",
+      "city": "CABA",
+      "neighborhood": "San Telmo"
     },
     {
       "id": 4,
@@ -108,8 +119,329 @@
         "/milanesa.jpeg",
         "/milanesa.jpeg",
         "/milanesa.jpeg"
-      ]
+      ],
+      "province": "Buenos Aires",
+      "city": "CABA",
+      "neighborhood": "Caballito"
+    },
+    {
+      "id": 5,
+      "title": "cafecito",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "belen",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "Bodegón",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Nueva Córdoba"
+    },
+    {
+      "id": 6,
+      "title": "Merienda",
+      "rating": 4.5,
+      "description": "merienda en cordoba",
+      "userName": "berta",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "Cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con toston de palta"
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Nueva Córdoba"
+    },
+    {
+      "id": 7,
+      "title": "San Pietro",
+      "rating": 4.5,
+      "description": "pastas ricas",
+      "userName": "Gabriel",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "restaurante",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "fetuccini fruti di mari"
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Nueva Córdoba"
+    },
+    {
+      "id": 8,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 9,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 10,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 11,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 12,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 13,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 14,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
+    },
+    {
+      "id": 15,
+      "title": "Cherry season",
+      "rating": 4.5,
+      "description": "riki riki",
+      "userName": "Giuliano",
+      "imageSrc": "/milanesa.jpeg",
+      "userAvatarSrc": "/icono.jpg",
+      "createdAt": "2025-08-10T18:30:00Z",
+      "location": "Cordoba, Nueva Cordoba",
+      "category": "cafe",
+      "ratings": {
+        "service": 3.0,
+        "place": 4.0,
+        "ambience": 4.0,
+        "value": 3.0
+      },
+      "content": [
+        "cafecito con medialunas "
+      ],
+      "gallery": [
+        "/milanesa.jpeg",
+        "/milanesa.jpeg",
+        "/milanesa.jpeg"
+      ],
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "neighborhood": "Guemes"
     }
-      
   ]
 }

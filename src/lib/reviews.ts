@@ -1,27 +1,23 @@
 // src/lib/reviews.ts
-import { Review } from "@/src/types/review";
+import type { Review } from "@/src/types/review";
+import { slugify } from "./slug";
 
+const API = "http://localhost:3001/reviews";
 
-// generar pagina por Id
-const BASE = "http://localhost:3001";
-export async function getReviewById(id: string | number): Promise<Review | null> {
-  const res = await fetch(`${BASE}/reviews/${id}`, { cache: "no-store" });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error("Error al cargar la reseña");
-  return res.json();
-}
-
-// Trae las últimas N reseñas, ordenadas por fecha descendente
-export async function getLatestReviews(limit = 10): Promise<Review[]> {
-  const url = `http://localhost:3001/reviews?_sort=createdAt&_order=desc&_limit=${limit}`;
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error("No se pudo cargar las reseñas");
-  return res.json();
-}
-
-// Si querés reutilizar también lista completa:
 export async function getAllReviews(): Promise<Review[]> {
-  const res = await fetch("http://localhost:3001/reviews", { cache: "no-store" });
-  if (!res.ok) throw new Error("No se pudo cargar las reseñas");
-  return res.json();
+  const res = await fetch(API, { cache: "no-store" });
+  if (!res.ok) throw new Error("No se pudo cargar /reviews");
+  const data: Review[] = await res.json();
+  // asegura slug (fallback)
+  return data.map(r => ({ ...r, slug: r.slug ?? slugify(r.title) }));
+}
+
+export async function getLatestReviews(n: number) {
+  const all = await getAllReviews();
+  return all.slice(0, n);
+}
+
+export async function getReviewBySlug(slug: string) {
+  const all = await getAllReviews();
+  return all.find(r => (r.slug ?? slugify(r.title)) === slug) ?? null;
 }

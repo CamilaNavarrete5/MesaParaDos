@@ -1,3 +1,4 @@
+import Footer from "@/src/components/footer";
 import ReviewsPageClient from "@/src/components/reviews/ReviewsPageClient";
 import type { Review } from "@/src/types/review";
 
@@ -11,5 +12,10 @@ async function getReviews(): Promise<Review[]> {
 
 export default async function ReviewPage() {
   const data = await getReviews();
-  return <ReviewsPageClient reviews={data} />;
+  return (
+    <>
+      <ReviewsPageClient reviews={data} />;
+    </>
+  )
+
 }

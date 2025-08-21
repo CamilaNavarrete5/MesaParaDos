@@ -4,7 +4,7 @@ import type { ReactNode, HTMLAttributes } from "react";
 type WithClassName = { className?: string };
 
 // Contenedor base
-export function CardRoot({ as = "article", className = "", children, ...rest }:{
+export function CardRoot({ as = "article", className = "", children, ...rest }: {
   as?: "article" | "div" | "section";
   className?: string;
   children: React.ReactNode;
@@ -13,8 +13,8 @@ export function CardRoot({ as = "article", className = "", children, ...rest }:{
   return (
     <Comp
       className={[
-        "group overflow-hidden rounded-2xl bg-card border border-border shadow-sm",
-        "transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-primary",
+        "group overflow-hidden rounded-2xl bg-card shadow-sm",
+        "transition-all duration-200 hover:shadow-md hover:-translate-y-0.5",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary",
         className,
       ].join(" ")}
@@ -31,7 +31,7 @@ export function CardMedia({
   src,
   alt,
   className = "",
-  sizes = "(min-width:1024px) 400px, (min-width:640px) 50vw, 100vw",
+  sizes = "(min-width:1024px) 500px, (min-width:640px) 50vw, 100vw",
   priority = false,
   ...rest
 }: {

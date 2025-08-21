@@ -1,6 +1,6 @@
 "use client";
 
-import ReviewCard from "@/src/components/reviews/cards/ReviewCard";
+import ReviewCard from "@/src/components/reviews/ReviewCard";
 import { Review } from "@/src/types/review";
 import { useRef } from "react";
 
